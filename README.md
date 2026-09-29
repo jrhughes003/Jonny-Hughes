@@ -2,13 +2,14 @@
 
 **Live site:** <https://jrhughes003.github.io/Jonny-Hughes/>
 
-A responsive, single-page portfolio with sections for projects, skills, and contact info.
+A responsive, single-page portfolio with sections for experience, skills, projects, and contact info.
 
 **Tech:** HTML, CSS, vanilla JavaScript
 
 ## Features
 
 - Mobile-friendly hamburger navigation
+- Experience and education timeline
 - Project showcase cards linking to each project's code
 - Smooth scrolling and scroll-triggered animations
 - Social media links
