@@ -3,428 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jonny Hughes: software developer and McMaster Mechatronics engineering student. Projects, experience, and contact.">
-    <meta name="keywords" content="software developer, programmer, portfolio, web development">
+    <meta name="description" content="Jonny Hughes, software developer at Qoherent and final-year Mechatronics and Management engineering student at McMaster University.">
     <meta name="author" content="Jonny Hughes">
-    
-    <title>Jonny Hughes - Software Developer Portfolio</title>
-    
-    <!-- External Resources -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Jonny Hughes</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Custom Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">Jonny Hughes</a>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#experience" class="nav-link">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+    <header class="masthead">
+        <a class="wordmark" href="#top">Jonny Hughes</a>
+        <nav aria-label="Sections">
+            <a href="#work">Work</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Hi, I'm <span class="highlight">Jonny Hughes</span>
-                </h1>
-                <h2 class="hero-subtitle">Software Developer &amp; Mechatronics Engineer</h2>
-                <p class="hero-description">
-                    Final-year Mechatronics and Management engineering student at McMaster University and
-                    software developer at Qoherent, an RF machine-learning startup. I like hard problems and
-                    owning work from scoping through implementation.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
-                <div class="hero-social">
-                    <a href="https://github.com/jrhughes003" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/jonny-hughes03" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:jrhughes003@gmail.com" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="image-placeholder" aria-hidden="true">
-                    <span class="initials">JH</span>
-                </div>
-            </div>
-        </div>
-    </section>
+    <main id="top">
+        <section class="intro">
+            <h1>Jonny Hughes</h1>
+            <p class="lede">
+                I write software for radio-frequency machine learning at Qoherent, a small
+                startup in Toronto, and I'm in my final year of Mechatronics and Management
+                engineering at McMaster University. Most of my work sits where code meets
+                hardware: inference pipelines, developer tooling, firmware, and the
+                occasional full-stack app.
+            </p>
+            <dl class="status">
+                <div><dt>Now</dt><dd>Software Developer (part-time), Qoherent</dd></div>
+                <div><dt>Graduating</dt><dd>April 2027, B.Eng. McMaster University</dd></div>
+                <div><dt>Looking for</dt><dd>Full-time roles from July 2027, in or around Calgary</dd></div>
+            </dl>
+            <p class="links">
+                <a href="mailto:jrhughes003@gmail.com">jrhughes003@gmail.com</a>
+                <a href="https://www.linkedin.com/in/jonny-hughes03" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com/jrhughes003" target="_blank" rel="noopener">GitHub</a>
+            </p>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="about-description">
-                        I'm finishing a B.Eng. in Mechatronics and Management (Co-op) at McMaster University,
-                        graduating in April 2027. At Qoherent I own a developer tooling product end-to-end, from
-                        Python code generation that turns JSON pipeline specs into deployable C++ inference
-                        applications to the FastAPI endpoints behind it. I'm comfortable across the stack, from
-                        STM32 firmware to a 35,000-line frontend overhaul in Vue and React.
+        <section id="work" class="block">
+            <h2>Work</h2>
+            <div class="entries">
+                <article class="entry">
+                    <header>
+                        <h3>Software Developer, Co-op <span class="org">Qoherent</span></h3>
+                        <p class="when">Sep 2025 – now</p>
+                    </header>
+                    <p class="context">Full-time co-op until July 2026, part-time alongside school since. Qoherent builds RIAHub, a platform for RF machine learning.</p>
+                    <ul>
+                        <li>Scoped, designed, and built the ML Application Composer, which packages signal sources, sinks, processing pipelines, and custom models into one deployable inference app. I worked out the requirements with the CEO and built it with little oversight.</li>
+                        <li>Wrote the Python code generator behind it: a JSON pipeline spec goes in, and a C++ inference application comes out, replacing seven or more hand-written C++ and CMake files per app. Built the FastAPI endpoints for the packaging workflow.</li>
+                        <li>Led a frontend overhaul of RIAHub in Vue and React: one pull request touching 515 files and about 35,000 lines, redesigning more than 20 pages around each user's active work.</li>
+                        <li>Pitched building a Wi-Fi and Bluetooth zone-fingerprinting demo as a standalone Composer app instead of inside RIAHub, prototyped enough to make the case, then built and delivered it to the stakeholder.</li>
+                        <li>Started the sprint process the six-person software team still runs: planning and closeout every two weeks, weekly check-ins, recorded demos.</li>
+                        <li>Contributed to a Department of National Defence project using ML to cut packet loss during handovers between AMFs on an Open5G core.</li>
+                    </ul>
+                </article>
+
+                <article class="entry">
+                    <header>
+                        <h3>Technical Sales Engineer, Co-op <span class="org">Trane Technologies</span></h3>
+                        <p class="when">Apr – Sep 2024, Apr – Sep 2025</p>
+                    </header>
+                    <ul>
+                        <li>Worked with commercial HVAC and building-automation customers through the whole sales cycle, from first outreach to post-sale support.</li>
+                        <li>When a controls contractor wouldn't come to site on a multistorey homeless shelter, helped start up two rooftop units and a make-up air unit, then came back with a technician to connect them to the building automation system. The general contractor moved on to the next phase and said they'd pick Trane controls next time.</li>
+                        <li>Read mechanical plans and controls documentation and worked with engineers and estimators on bills of materials, estimates, and proposals.</li>
+                    </ul>
+                </article>
+
+                <article class="entry">
+                    <header>
+                        <h3>B.Eng. Mechatronics and Management (Co-op) <span class="org">McMaster University</span></h3>
+                        <p class="when">2021 – Apr 2027</p>
+                    </header>
+                    <p>GPA 3.7/4.0. Capstone in 2026–27. Coursework includes data structures and algorithms, predictive and intelligent control (Kalman filters, estimation, ML), and two terms of embedded systems.</p>
+                </article>
+
+                <article class="entry">
+                    <header>
+                        <h3>Director <span class="org">McMaster Engineering Musical</span></h3>
+                        <p class="when">2021 – now</p>
+                    </header>
+                    <p>Went from cast member to assistant director to director of a student-written musical: a 110-member club, a $50,000 budget, and four shows in an 1,100-seat theatre for more than 1,500 people. Two days before opening the live-band mix fell apart; we fixed one song properly, carried the fix across the show, and worked through the rest in priority order.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="block">
+            <h2>Projects</h2>
+            <div class="entries">
+                <article class="entry">
+                    <header>
+                        <h3>FinanceFlow</h3>
+                        <p class="when">React · Electron · SQLite</p>
+                    </header>
+                    <p>A local-first personal finance app that runs as a desktop app on SQLite or in the browser on localStorage, from one codebase. Budgets with rollover, forecasting, debt payoff planning, and a long-range plan with Canadian tax rules and Monte Carlo simulation. The optional AI features are off by default, and each one only sees the fields on its allow-list.</p>
+                    <p class="actions">
+                        <a href="https://jrhughes003.github.io/financeflow/" target="_blank" rel="noopener">Try the demo</a>
+                        <a href="https://github.com/jrhughes003/financeflow" target="_blank" rel="noopener">Source</a>
                     </p>
-                    <p class="about-description">
-                        I do my best work on self-driven, fast-moving teams, and I'm especially interested in
-                        defence, telecom, aerospace, energy technology, and software. I'm available for full-time
-                        roles from July 2027 and relocating to Calgary, Alberta.
+                </article>
+
+                <article class="entry">
+                    <header>
+                        <h3>Embedded Systems Arcade</h3>
+                        <p class="when">C++ · STM32</p>
+                    </header>
+                    <p>Three games on an STM32 microcontroller with a custom interface, for an embedded systems course. I drew the state flow diagrams first and translated them directly into the C++ control logic. Graded A+.</p>
+                </article>
+
+                <article class="entry">
+                    <header>
+                        <h3>Musical Script Analyzer</h3>
+                        <p class="when">Python</p>
+                    </header>
+                    <p>Scripts I wrote for the Engineering Musical's production of <i>The Gatsby</i>. They parse StudioBinder exports of the script and count each character's lines by scene and song, which helped us run the show.</p>
+                    <p class="actions">
+                        <a href="https://github.com/jrhughes003/Personal-Projects/tree/main/tools/musical-script-analyzer" target="_blank" rel="noopener">Source</a>
                     </p>
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-code"></i>
-                            <h3>Ownership</h3>
-                            <p>Scoped, designed, and built Qoherent's ML Application Composer with minimal oversight, from first conversation with the CEO to demos on real hardware.</p>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-microchip"></i>
-                            <h3>Hardware to Software</h3>
-                            <p>STM32 firmware, RF signal processing and machine learning, and full-stack web and desktop apps.</p>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-users"></i>
-                            <h3>Leadership</h3>
-                            <p>Introduced sprints for a 6-person software team and directed a 110+ member musical production on a $50,000 budget.</p>
-                        </div>
-                    </div>
-                </div>
+                </article>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Experience &amp; Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Software Developer, Co-op</h3>
-                        <h4 class="timeline-subtitle">Qoherent · Toronto, ON</h4>
-                        <p class="timeline-date">Sep 2025 – Present</p>
-                        <ul class="timeline-list">
-                                <li>Owned the ML Application Composer end-to-end, packaging signal sources, sinks, processing pipelines, and custom ML models into one deployable inference application.</li>
-                                <li>Wrote Python code generation that turns JSON pipeline specs into C++ inference apps, replacing 7+ hand-written C++ and CMake files per application.</li>
-                                <li>Built the FastAPI endpoints behind the Composer's packaging workflow.</li>
-                                <li>Led a 35,000-line, 515-file frontend overhaul of RIAHub, the company's flagship platform, in Vue and React with shadcn/ui.</li>
-                                <li>Built a Wi-Fi and Bluetooth zone-fingerprinting demo for a stakeholder, and introduced the sprint process the 6-person team still uses.</li>
-                                <li>Contributed to a Department of National Defence project applying ML to reduce packet loss during 5G core handovers.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Technical Sales Engineer, Co-op</h3>
-                        <h4 class="timeline-subtitle">Trane Technologies · Toronto, ON</h4>
-                        <p class="timeline-date">Apr – Sep 2024 and Apr – Sep 2025</p>
-                        <ul class="timeline-list">
-                                <li>Worked with customers across the full sales cycle for commercial HVAC and building automation, from outreach to post-sale support.</li>
-                                <li>Got a stalled homeless-shelter project moving by helping start up rooftop and make-up air units on site and connect them to the building automation system.</li>
-                                <li>Reviewed mechanical plans and controls documentation, and worked with engineers and estimators on BOMs, cost estimates, and proposals.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">B.Eng. Mechatronics and Management (Co-op)</h3>
-                        <h4 class="timeline-subtitle">McMaster University · Hamilton, ON</h4>
-                        <p class="timeline-date">2021 – April 2027 (expected)</p>
-                        <ul class="timeline-list">
-                                <li>GPA 3.7/4.0. Capstone project in 2026–27.</li>
-                                <li>Coursework: Data Structures and Algorithms; Predictive and Intelligent Control (Kalman filters, statistical estimation, ML); Embedded Systems 1 and 2.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Director</h3>
-                        <h4 class="timeline-subtitle">McMaster Engineering Musical · Hamilton, ON</h4>
-                        <p class="timeline-date">2021 – Present</p>
-                        <ul class="timeline-list">
-                                <li>Rose from cast member to assistant director to director of a student-written production, leading a 110+ member club on a $50,000 budget.</li>
-                                <li>Four shows in an 1,100+ seat theatre to over 1,500 attendees.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <section id="skills" class="block">
+            <h2>Skills</h2>
+            <dl class="skills">
+                <div><dt>Strong</dt><dd>Python, C++, embedded C/C++, STM32, Git, Linux</dd></div>
+                <div><dt>Working</dt><dd>FastAPI, Docker, CMake, Vue, React, JavaScript, SQL, PyTorch, GNU Radio, Electron, Vitest</dd></div>
+                <div><dt>Some exposure</dt><dd>Go, NVIDIA Holoscan, Grafana, 5G / Open5G</dd></div>
+                <div><dt>Languages</dt><dd>English, conversational French</dd></div>
+            </dl>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3 class="category-title">
-                        <i class="fas fa-code"></i>
-                        Languages
-                    </h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Python</span>
-                        <span class="skill-item">C++</span>
-                        <span class="skill-item">C</span>
-                        <span class="skill-item">JavaScript</span>
-                        <span class="skill-item">C#</span>
-                        <span class="skill-item">PHP</span>
-                        <span class="skill-item">SQL</span>
-                        <span class="skill-item">Go</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="category-title">
-                        <i class="fas fa-server"></i>
-                        Backend &amp; Tooling
-                    </h3>
-                    <div class="skill-items">
-                        <span class="skill-item">FastAPI</span>
-                        <span class="skill-item">REST APIs</span>
-                        <span class="skill-item">Docker</span>
-                        <span class="skill-item">CMake</span>
-                        <span class="skill-item">Git</span>
-                        <span class="skill-item">Linux</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="category-title">
-                        <i class="fas fa-globe"></i>
-                        Frontend &amp; Desktop
-                    </h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Vue</span>
-                        <span class="skill-item">React</span>
-                        <span class="skill-item">shadcn/ui</span>
-                        <span class="skill-item">Vite</span>
-                        <span class="skill-item">Tailwind CSS</span>
-                        <span class="skill-item">Electron</span>
-                        <span class="skill-item">HTML/CSS</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="category-title">
-                        <i class="fas fa-microchip"></i>
-                        Embedded &amp; Hardware
-                    </h3>
-                    <div class="skill-items">
-                        <span class="skill-item">STM32</span>
-                        <span class="skill-item">Embedded C/C++</span>
-                        <span class="skill-item">State machines</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="category-title">
-                        <i class="fas fa-wave-square"></i>
-                        ML &amp; Signal Processing
-                    </h3>
-                    <div class="skill-items">
-                        <span class="skill-item">PyTorch</span>
-                        <span class="skill-item">GNU Radio</span>
-                        <span class="skill-item">Software-defined radio</span>
-                        <span class="skill-item">Kalman filtering</span>
-                        <span class="skill-item">Monte Carlo</span>
-                        <span class="skill-item">5G / Open5G</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="category-title">
-                        <i class="fas fa-flask"></i>
-                        Testing &amp; AI Tools
-                    </h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Vitest</span>
-                        <span class="skill-item">React Testing Library</span>
-                        <span class="skill-item">Anthropic Claude API</span>
-                        <span class="skill-item">Claude Code</span>
-                    </div>
-                </div>
+        <section id="contact" class="block">
+            <h2>Contact</h2>
+            <div>
+                <p>Email is the best way to reach me: <a href="mailto:jrhughes003@gmail.com">jrhughes003@gmail.com</a>. I'm also on <a href="https://www.linkedin.com/in/jonny-hughes03" target="_blank" rel="noopener">LinkedIn</a>.</p>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-wallet"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">FinanceFlow</h3>
-                        <p class="project-description">
-                            Local-first personal finance app that runs on the desktop or in the browser: budgets with rollover, forecasting, investment and debt tracking, and long-range planning with Monte Carlo simulation.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Electron</span>
-                            <span class="tech-tag">SQLite</span>
-                            <span class="tech-tag">Tailwind CSS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://jrhughes003.github.io/financeflow/" class="project-link" target="_blank" rel="noopener">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                            <a href="https://github.com/jrhughes003/financeflow" class="project-link" target="_blank" rel="noopener">
-                                <i class="fab fa-github"></i> Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-gamepad"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Embedded Systems Arcade</h3>
-                        <p class="project-description">
-                            Three-game arcade on an STM32 microcontroller with a custom user interface. I wrote the state flow diagrams and turned them into C++ control logic. Earned an A+.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">C++</span>
-                            <span class="tech-tag">STM32</span>
-                            <span class="tech-tag">Embedded</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-theater-masks"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Musical Script Analyzer</h3>
-                        <p class="project-description">
-                            Python tools built for the McMaster Engineering Musical that parse script exports and report every character's lines by scene and song, to support running the show.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Parsing</span>
-                            <span class="tech-tag">Data Analysis</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/jrhughes003/Personal-Projects/tree/main/tools/musical-script-analyzer" class="project-link" target="_blank" rel="noopener">
-                                <i class="fab fa-github"></i> Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Connect</h3>
-                    <p>
-                        I'm always open to discussing new opportunities, interesting projects, 
-                        or just having a conversation about technology and development.
-                    </p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:jrhughes003@gmail.com">jrhughes003@gmail.com</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-linkedin"></i>
-                            <a href="https://www.linkedin.com/in/jonny-hughes03" target="_blank">LinkedIn Profile</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-github"></i>
-                            <a href="https://github.com/jrhughes003" target="_blank">GitHub Profile</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2026 Jonny Hughes. All rights reserved.</p>
-                <div class="footer-social">
-                    <a href="https://github.com/jrhughes003" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/jonny-hughes03" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:jrhughes003@gmail.com" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
+    <footer class="colophon">
+        <p>Jonny Hughes · Hamilton, Ontario</p>
+        <p><a href="https://github.com/jrhughes003/Jonny-Hughes" target="_blank" rel="noopener">Source for this page</a></p>
     </footer>
-
-    <!-- Scripts -->
-    <script src="script.js"></script>
 </body>
 </html>

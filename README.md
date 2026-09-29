@@ -1,37 +1,11 @@
-# Portfolio Website
+# Jonny Hughes
 
-**Live site:** <https://jrhughes003.github.io/Jonny-Hughes/>
+Source for my personal site: **<https://jrhughes003.github.io/Jonny-Hughes/>**
 
-A responsive, single-page portfolio with sections for experience, skills, projects, and contact info.
+One static page, `index.html` plus `styles.css`, with no JavaScript and no build step. It's served by GitHub Pages from `main`, so a push republishes it.
 
-**Tech:** HTML, CSS, vanilla JavaScript
+## Editing
 
-## Features
-
-- Mobile-friendly hamburger navigation
-- Experience and education timeline
-- Project showcase cards linking to each project's code
-- Smooth scrolling and scroll-triggered animations
-- Social media links
-
-## Deployment
-
-Hosted on GitHub Pages. Every push to `main` republishes the site automatically — there is no build step.
-
-## Running locally
-
-No build step — open `index.html` in a browser, or serve the folder:
-
-```bash
-python -m http.server 8000
-```
-
-## Files
-
-| File | Purpose |
-| --- | --- |
-| `index.html` | Page markup |
-| `styles.css` | Styles and responsive layout |
-| `script.js` | Navigation and animations |
-| `CUSTOMIZATION_GUIDE.md` | How to fill in your own content |
-| `DEPLOYMENT_GUIDE.md` | Publishing to GitHub Pages and other hosts |
+- Content lives in `index.html`, grouped into Work, Projects, Skills and Contact sections.
+- Colours and fonts are set once as variables at the top of `styles.css`. Dark mode follows the visitor's system setting.
+- To preview locally, open `index.html` in a browser, or run `python -m http.server` in this folder.
